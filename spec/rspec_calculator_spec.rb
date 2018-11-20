@@ -4,6 +4,9 @@ describe 'Calcengine' do
   before(:all)do
     @calc = Calcengine.new
   end
+  before(:each)do
+    puts 'This is after each test'
+  end
   it 'should correctly add two numbers'do
     expect(@calc.add(1,2)).to eq 3
   end
